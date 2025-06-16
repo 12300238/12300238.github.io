@@ -93,3 +93,55 @@ footer {
 a {
   color: #0078D7;
 }
+
+/* Hamburger button */
+.menu-toggle {
+  display: none;
+  background: none;
+  color: white;
+  font-size: 2em;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #005fa3;
+  }
+
+  nav.open {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  main {
+    padding-top: 250px; /* plus de place pour le menu ouvert */
+  }
+}
