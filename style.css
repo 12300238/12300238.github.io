@@ -118,6 +118,10 @@ a {
     display: block;
   }
 
+  section{
+    scroll-margin-top: 170px;
+  }
+
   nav {
     display: none;
     flex-direction: column;
