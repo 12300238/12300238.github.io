@@ -112,6 +112,13 @@ h4{
   border-radius: 8px;
 }
 
+.image_mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 /*footer sextion*/
 footer {
   text-align: center;
