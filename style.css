@@ -119,6 +119,20 @@ h4{
   text-align: center;
 }
 
+.but_lien{
+  background-color: #0078D7;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px rgb(95, 90, 90);
+  padding-bottom: 2px;
+}
+
+.but_lien a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
 /*footer sextion*/
 footer {
   text-align: center;
