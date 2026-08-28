@@ -92,7 +92,33 @@
       </div>
     </section>
 
-    <!-- Nav -->
+    <section class="section">
+      <div class="section-inner">
+        <p class="section-label">Projet perso · Infrastructure maison</p>
+        <h2 class="section-title">NAS maison</h2>
+
+        <div class="card accent-bar reveal" style="max-width: 760px;">
+          <div class="card-number">PROJET PERSO · OpenMediaVault · Réseau</div>
+          <h3>Reconversion d'un vieux PC en serveur NAS</h3>
+          <p>
+            Récupération d'un vieux PC pour en faire un NAS domestique sous <strong style="color:var(--text)">OpenMediaVault</strong>. L'installation a demandé de résoudre plusieurs problèmes réseau bas niveau : erreurs <strong style="color:var(--text)">DHCP6</strong> (la box annonçait gérer le DHCP mais n'envoyait jamais de Reply — résolu en tuant le processus DHCP6), puis installation et configuration manuelle des <strong style="color:var(--text)">pilotes de carte réseau</strong> absents par défaut. La gestion des paquets système a aussi nécessité d'installer <code>dbus</code>, requis pour qu'<code>avahi-daemon</code> puisse tourner.
+          </p>
+          <p style="margin-top:12px;color:var(--muted);font-size:0.9rem;">
+            Une fois opérationnel, j'ai relié la caméra de surveillance de la maison au NAS via une <strong style="color:var(--text)">redirection de port FTP</strong> sur le routeur — les deux appareils étant sur des réseaux différents — pour y centraliser automatiquement toutes les sorties vidéo.
+          </p>
+          <div class="card-links">
+            <span class="chip">OpenMediaVault</span>
+            <span class="chip">Linux</span>
+            <span class="chip">DHCP6</span>
+            <span class="chip">Pilotes réseau</span>
+            <span class="chip">FTP</span>
+            <span class="chip">Port forwarding</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <section class="section">
       <div class="section-inner">
         <div class="page-nav">
