@@ -3,403 +3,173 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio - Mathew Prades</title>
+  <title>Mathew Prades — Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <header>
-    <div class="header-top">
-      <h1>Mathew Prades</h1>
-      <p>
-        Étudiant en BUT Informatique
-        <br>
-        <label for="copy-email"><i id="email">prades.mathew@gmail.com</i></label>
-        <button id="copy-email" title="Copier l'adresse mail" style="background:none;border:none;cursor:pointer;vertical-align:middle;">
-          <img src="public/copy-icon.png" alt="Copier" style="width:16px;height:16px;">
-        </button>
-        <span id="copy-success" style="display:none;color:rgb(12, 235, 12);font-size:0.9em;">Copié !</span>
-        <script>
-          
-        </script>
-      </p>
+    <div class="header-inner">
+      <div class="header-identity">
+        <a href="index.html" class="name">Mathew Prades</a>
+        <span class="role">BUT Informatique · 3ème année</span>
+      </div>
+      <div class="email-row">
+        <span id="email">prades.mathew@gmail.com</span>
+        <button id="copy-email" title="Copier l'adresse">copy</button>
+        <a id="mail-draft" href="mailto:prades.mathew@gmail.com" title="Ouvrir un brouillon">✉ mail</a>
+        <span id="copy-success">✓ Copié !</span>
+      </div>
       <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="experience.html">Expérience</a></li>
+          <li><a href="perso.html">Personnel</a></li>
+        </ul>
+      </nav>
     </div>
-
-    <nav id="navbar">
-      <ul>
-        <li><a class="nav-link" href="#qui">Qui suis-je ?</a></li>
-        <li><a class="nav-link" href="#compétences">Mes compétences</a></li>
-        <li><a class="nav-link" href="#pro">Experience professionnelle</a></li>
-        <li><a class="nav-link" href="#projets">Projets</a></li>
-      </ul>
-    </nav>
   </header>
 
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-tag">En alternance — Nomios · Réseau</div>
+      <h1>Développeur<br><span>Informatique</span><br>en formation.</h1>
+      <p class="hero-desc">
+        Étudiant en BUT Informatique, passionné par le développement web et les architectures modernes.
+        De la construction d'API REST à la supervision d'infrastructures réseau.
+      </p>
+      <div class="hero-links">
+        <a href="projets.html" class="btn btn-primary">Voir mes projets →</a>
+        <a href="experience.html" class="btn btn-outline">Mon expérience</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>SCROLL</span>
+      <div class="scroll-hint-line"></div>
+    </div>
+  </section>
   <main>
-    <section id="qui">
-      <h2>1. Qui suis-je ?</h2>
 
-      <h3>Mon BUT</h3>
-      <p>
-        Étudiant en deuxième année de BUT Informatique,
-        j'ai pu découvrir ce domaine et comprendre les
-        enjeux qui l'entourent.
-        <br>
-        <br>
-        Alors que lors de ma première année, j'ai
-        principalement étudié les bases de la
-        programmation, des systèmes informatiques
-        et des outils numériques, l'objectif était
-        de nous donner une vue d'ensemble de l'informatique
-        et de nous apprendre la logique qui se cache
-        derrière le monde du développement.
-        <br>
-        En deuxième année, le développement est
-        abordé de manière plus concrète et opérationnelle. 
-        Au lieu d'apprendre la logique d'un langage, on
-        apprend à la mettre en pratique dans un projet.
-        J'ai également appris les bonnes pratiques lors
-        d'un développement, pour rendre le tout plus
-        cohérent, compréhensible et nous faire prendre
-        conscience de tous les points essentiels pour
-        le bon déroulement d'un projet.
-        <br>
-        <br>
-        Durant cette année, j'ai également effectué un
-        stage dans le domaine du développement web, ce
-        qui m'a conforté dans l'idée que j'avais trouvé
-        ma voie.
-      </p>
+    <!-- Qui suis-je -->
+    <section class="section">
+      <div class="section-inner">
+        <p class="section-label">01 — À propos</p>
+        <h2 class="section-title">Qui suis-je ?</h2>
 
-      <h3>Mes ambitions</h3>
-      <p>
-        Mon objectif est de terminer mon BUT informatique,
-        puis de poursuivre avec un diplôme d'ingénieur en
-        informatique ou en réseaux, ce qui me permettrait
-        d'atteindre le niveau bac +5. Ces diplômes me
-        permettront ensuite d'exercer le métier de
-        développeur ou d'ingénieur en réseaux. Une fois
-        dans le monde professionnel, j'aimerais évoluer
-        au sein de différentes entreprises afin de découvrir
-        différents cadres, philosophies, mais aussi
-        progresser sur les plans professionnel et
-        hiérarchique grâce à cette expérience.
-      </p>
-    </section>
-
-    <section id="compétences">
-      <h2>2. Bilan de mes compétences et projets</h2>
-
-      <h3>Mes projets universsitaire</h3>
-
-      <h4>Installation de services réseau</h4>
-      <p>
-        Dans le cadre d'un projet
-        universitaire, j'ai pu installer un
-        système de services réseau relié à
-        une base de données, sur une
-        machine virtuelle. Pour cela j'ai
-        émulé une machine virtuelle sur un
-        disque dur, via le logiciel Oracle
-        VM VirtualBox. J'y ai ensuite installé
-        MariaDB, pour gérer la base de
-        données. Ainsi que le service
-        apache2, pour faire de ma machine
-        un serveur. Et pour terminer j'ai
-        utilisé le langage PHP, pour faire
-        communiquer les deux services.
-        <br>
-        <br>
-        Ce projet ma appris à:
-        <br>
-        - Crée une machine virtuelle, la booter, et la faire fonctionner sur différents matériels.
-        <br>
-        - Configurer un environnement de développement, avec différents outils et les interconnecter.
-        <br>
-        - Crée des scripts pour la lecture d'informations, leur traitement et les renvoyer à l'utilisateur.
-      </p>
-
-      <h4>Organisation d'un travail d'équipe</h4>
-      <p>
-        Lors de ce projet, nous avons dû, avec mon équipe, visiter un musée et noter les parties intéressantes ou qui nous ont marqués.
-        Mais aussi effectuer une interview d'une personne présente à l'exposition, pour avoir son ressenti.
-        Puis développer un site pour présenter l'exposition, et imaginer ce qu'elle présentera l'année suivante.
-        Moi et deux de mes camarades étions chargés de développer le site web.
-        <br>
-        <br>
-        Lors de ce projet, j'ai pu développer mes compétences en:
-        <br>
-        - Dans les langages web basiques tels que le HTML, CSS et JavaScript, pour créer une page web fonctionnelle, agréable à utiliser et responsive.
-        <br>
-        - Communication et mes facultés à travailler en équipe, car il fallait organiser les différentes tâches, se les répartir et informer les autres de l'avancement du projet.
-        <br>
-        <br>
-        <button class="but_lien"><a href="https://12300238.github.io/SAE-206/"><i>Le site web que nous avons crée</i></a></button>
-        <br>
-        <button class="but_lien"><a href="https://github.com/12300238/SAE-206"><i>le github</i></a></button>
-      </p>
-
-      <h4>Création BD</h4>
-      <p>
-        Pour ce projet, j'ai dû utiliser l'outil
-        PostgreSQL pour paramétrer une
-        base de données. J'ai dû faire un
-        modèle relationnel, pour décider à
-        quoi allaient ressembler ces
-        tables et comment elles allaient
-        communiquer entre elles. Puis j'ai
-        écrit un script pour que ces tables
-        se créent de façon automatique.
-        Et pour finir j'ai demandé à un
-        logiciel spécialisé d'écrire sa
-        propre version du script, pour la
-        comparer à la mienne.
-        <br>
-        <br>
-        Ce projet m'a permis de développer mes compétences en:
-        <br>
-        - Modélisation d'entité relationnelle, et en définition de base de données.
-        <br>
-        - Réalisation de script de génération de base de données.
-        <br>
-        - Mais j'ai aussi découvert des outils professionnels pour générer ses bases de données.
-        <br>
-        <br>
-        <i>Des model entite association de mon projet:</i>
-        <div class="images_suivit">
-          <img src="public/SAE3_1.png" alt="model entité association 1">
-          <img id="img_spe_1" src="public/SAE3_2.png" alt="model entité association 2">
-        </div>
-      </p>
-
-      <h4>Recueil de besoins</h4>
-      <p>
-        Dans ce projet, j'ai dû endosser deux
-        rôles, ce lui de client, et celui de
-        développeur.
-        Dans mon rôle de client, j'étais un
-        patron de bar, qui souhaitait un
-        nouveau site. J'ai dû définir des
-        besoins, donner mes attentes
-        fonctionnelles et graphiques pour le
-        site et faire des retours sur les
-        propositions. Puis, dans le rôle de
-        développeur, j'ai dû faire un site
-        pour un observatoire qui souhaitait
-        accéder à un public plus jeune. J'ai
-        dû étudier le cahier des charges,
-        répondre aux attentes des clients et
-        prendre en compte les retours faits.
-        <br>
-        <br>
-        Ce projet m’a permis de travailler mes compétences en communication.
-        <br>
-        Tout au long de ce projet, j'ai dû apprendre à m'exprimer pour définir des besoins de manière claire, pour exprimer mes attentes, mais aussi pour faire des retours constructifs et pertinents.
-        <br>
-        Mais j'ai aussi dû apprendre à écouter, mon client pour prendre en compte ses besoins, comprendre ses attentes et écouter son avis et les différents retours qu'il me faisait.
-        <br>
-        <br>
-        <i>Les maquette du site:</i>
-        <div class="images_coller">
-          <img src="public/SAE4_1.png" alt="page d'accueil V1">
-          <img src="public/SAE4_2.png" alt="page d'accueil V2">
-        </div>
-      </p>
-
-      <h4>Développement d'une application</h4>
-      <p>
-        L'objectif de ce projet était de mettre
-        en pratique l'ensemble des connaissances
-        acquises lors de nos cours. À cette fin,
-        nous avons créé une application web
-        complète, aussi bien pour le back-end
-        que pour le front-end. Nous avons créé
-        une base de données MySQL que nous
-        interrogeons avec une API Python utilisant
-        la bibliothèque Django, et nous gérons
-        notre front-end avec NextJS.
-        <br>
-        Une fois l'application web opérationnelle,
-        nos professeurs nous ont demandé de
-        reprendre le développement du back-end
-        afin de créer une application mobile. Pour
-        développer cette application, nous avons
-        utilisé Flutter. Une fois le projet
-        terminé, nous disposions d'une
-        application web et mobile opérationnelle
-        permettant de toucher le plus d'utilisateurs
-        possible.
-        <br>
-        <br>
-        Ce projet m’a permis de faire un bilan de mes compétences, car il a fallu que j'utilise toutes les compétences que j'avais développées pendant mes deux premières années de BUT.
-        <br>
-        Nous avons créé une application web, que nous avons ensuite convertie en application mobile, et nous avons même dû conteneuriser notre back-end.
-        <br>
-        Et finalement, nous avons dû communiquer. Tout au long de ce projet, nous avons dû échanger via des réunions, pour faire des points sur l'avancée du projet et les différentes tâches restantes.
-        <br>
-        <br>
-        <button class="but_lien"><a href="https://github.com/NoWauu/V-lib"><i>le github</i></a></button>
-        <div class="images_coller">
-          <div class="image_mobile">
-            <span>page d'accueil du site:</span>
-            <br>
-            <img src="public/SAE5_1.png" alt="page d'accueil">
+        <div class="two-col">
+          <div class="about-text reveal">
+            <p>
+              Étudiant en troisième année de BUT Informatique en alternance, j'ai construit une formation solide allant des fondamentaux de la programmation jusqu'aux architectures logicielles modernes. Les semestres 3 et 4 ont été particulièrement denses : développement web, SQL et programmation avancée, architecture logicielle, qualité de développement, virtualisation, développement mobile.
+            </p>
+            <p>
+              Le semestre 5, en coloration IA, a été centré sur un projet fil rouge ambitieux : concevoir, entraîner et intégrer dans une application Android des modèles de <strong>deep learning</strong> pour prédire l'âge, le genre et l'ethnicité d'une personne depuis une photo. Deux approches testées — modèles CNN <em>from scratch</em> et <em>transfer learning</em> (EfficientNetB0, MobileNetV2) — avec une intégration via TensorFlow Lite, YOLO pour la détection faciale, et Firebase.
+            </p>
+            <p>
+              Mon objectif est de terminer mon BUT puis d'intégrer <a href="https://www.oteria.fr/" target="_blank">l'école Oteria</a> — école d'excellence en cybersécurité — où je suis déjà accepté en Mastère 1, pour ensuite évoluer dans différentes entreprises et progresser sur le plan professionnel.
+            </p>
+            <div class="skills-row">
+              <span class="skill-badge highlight">Python · Django · FastAPI</span>
+              <span class="skill-badge highlight">NextJS</span>
+              <span class="skill-badge highlight">Flutter</span>
+              <span class="skill-badge highlight">Angular</span>
+              <span class="skill-badge">HTML · CSS · JS</span>
+              <span class="skill-badge">MySQL · PostgreSQL · Elasticsearch</span>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">Git</span>
+              <span class="skill-badge">PHP</span>
+              <span class="skill-badge">Linux · VirtualBox</span>
+              <span class="skill-badge">Cybersécurité réseaux</span>
+              <span class="skill-badge">TensorFlow · Keras NLP</span>
+            </div>
           </div>
-          <div class="image_mobile">
-            <span>page d'aceuil de l'application:</span>
-            <br>
-            <img src="public/SAE5_2.png" alt="page d'accueil">
+
+          <div class="about-stats reveal">
+            <div class="stat-card">
+              <div class="stat-label">Formation</div>
+              <div class="stat-value">BUT Informatique</div>
+              <div class="stat-sub">3ème année — Coloration IA · IUT Villetaneuse</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Expérience pro</div>
+              <div class="stat-value">Stage + Alternance</div>
+              <div class="stat-sub">Veolia (S4) · Nomios Cybersécurité (S5)</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Contact</div>
+              <div class="stat-value" style="font-size:1rem;">prades.mathew@gmail.com</div>
+              <div class="stat-sub">Disponible pour échanges</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-label">Ambition</div>
+              <div class="stat-value">Mastère Oteria</div>
+              <div class="stat-sub">École de cybersécurité · Accepté en M1</div>
+            </div>
           </div>
         </div>
-      </p>
-
-      <h3>Les compétence aquise</h3>
-      <p>
-        Ses projets m'ont permis de
-        progresser et de mettre en pratique mes
-        compétences dans un contexte précis et pertinent.
-        <br>
-        J'ai ainsi pu apprendre à développer, à
-        optimiser et à déployer des applications
-        web et mobiles. Pour chacun de ces projets,
-        j'ai dû mettre en place des environnements
-        de développement et gérer les systèmes de
-        données correspondants. J'ai dû m'organiser
-        avec mon équipe pour définir les rôles de
-        chacun et organiser les différentes tâches.
-        <br>
-        Toutes ces expériences m'ont permis de
-        comprendre le fonctionnement réel d'un
-        projet informatique et de me préparer
-        aux missions de mon stage.
-      </p>
+      </div>
     </section>
 
-    <section id="pro">
-      <h2>3. Mon experience professionnelle</h2>
-      <h3>premier pas</h3>
-      <p>
-        Lors de ma deuxième année de BUT, j'ai
-        effectué un stage de huit semaines.
-        <br>
-        Je l'ai effectué au sein de la DSI de
-        Veolia Eau France. Durant celui-ci,
-        j'ai découvert un nouvel environnement
-        et une nouvelle façon de penser. À mon
-        arrivée dans l'entreprise, mon maître
-        de stage m'a accueilli et m'a fait
-        visiter les locaux, ainsi que les bureaux
-        et les salles de réunion. Il m'a ensuite
-        présenté le déroulement de mon stage
-        ainsi que les attentes de l'entreprise.
-        La façon de travailler était très
-        déroutante pour moi, car les journées
-        n'étaient pas rythmées par des horaires,
-        mais par des objectifs, ce qui était très
-        instable au début. Mais j'ai vite adopté
-        ce rythme, ainsi que les avantages qui
-        l'accompagnent.
-      </p>
-
-      <h3>Une experience enrichissante</h3>
-      <p>
-        Au cours de ce stage, j'ai pu découvrir
-        plusieurs particularités du monde du travail.
-        L'une des premières est qu'il faut anticiper
-        grandement les interactions avec les autres
-        services. Lors de mon arrivée dans l'entreprise,
-        j'ai ouvert un ticket auprès du support pour
-        obtenir mon matériel de développement, et il a
-        fallu une semaine entre le moment où j'ai ouvert
-        le ticket et le moment où j'ai pu commencer à
-        développer. Mais cela m'a aussi appris qu'il est
-        toujours possible d'avancer, car pendant toute
-        cette période d'attente, j'ai pu travailler sur
-        d'autres choses, comme la planification du
-        travail ou la lecture de documentation, ce qui
-        m'a permis d'être opérationnelle immédiatement
-        pour le développement.
-      </p>
-
-      <h3>Le travail d'équipe</h3>
-      <p>
-        Dans le cadre de ce projet, j'ai dû travailler
-        en équipe et coordonner mes efforts avec mes
-        différents collègues. Pour me familiariser avec
-        l'équipe, mon responsable a organisé une réunion
-        d'information. Pour assurer le suivi de mon
-        travail et recevoir des conseils, j'ai organisé
-        des réunions hebdomadaires avec lui, au cours
-        desquelles je lui présentais mon travail et il
-        me faisait part de ses retours sur les améliorations
-        à apporter et les prochaines tâches. J'ai ainsi
-        pu rester en phase avec mes collègues et contribuer
-        à un travail collaboratif. Toutes ces dispositions
-        ont été utiles lors de cette immersion
-        professionnelle et m'ont permis de comprendre le
-        fonctionnement d'une équipe en entreprise.
-      </p>
-    </section>
-
-    <section id="projets">
-      <h2>4. Mes projets personnels</h2>
-
-      <h3>La nuit de l'info</h3>
-      <p>
-        Les 5 et 6 décembre 2024, de 16 h 39 à 8 h 4,
-        j'ai participé à l'événement La Nuit de l'Info.
-        <br>
-        La Nuit de l’Info est une compétition nationale
-        qui réunit étudiants, enseignants et entreprises
-        pour qu'ils travaillent ensemble sur le développement
-        d’une application web pendant une nuit. Lors de cet
-        événement, j'ai pu travailler sur la création d'un
-        site web pour l'association 
-        <a href="https://www.raceforwater.org">Race for Water Fondation</a>.
-        Ce site avait pour but de présenter différents organismes marins.
-        Il comparait l'océan au corps humain pour mettre en évidence
-        leur utilité.
-        <br>
-        J'ai pu mettre en pratique mes compétences en
-        développement web, ainsi que ma capacité à travailler
-        en équipe et dans le respect de délais serrés.
-        <br>
-        <br>
-        <button class="but_lien"><a href="https://github.com/NoWauu/NDI2024"><i>le github</i></a></button>
-      </p>
-
-      <h3>Générateur de contrat</h3>
-      <p>
-        Dans un cadre personnel, j'ai développé un
-        outil de création de contrats. Cet outil
-        utilise la suite de bureau de Google, plus
-        précisément Google Sheets et Docs, ainsi
-        que AppScript, un langage destiné à développer
-        de nouvelles fonctionnalités et qui est un
-        dérivé de JavaScript.
-        <br>
-        Pour fonctionner, l'outil prend pour entrée
-        des morceaux de contrat pré-générés, ainsi
-        que des noms de variables à modifier (nom
-        des contractants, durée du contrat, etc.),
-        puis génère à partir de ces informations un
-        contrat opérationnel sous la forme d'un
-        document Google Docs.
-        <br>
-        <br>
-        <button class="but_lien"><a href="https://github.com/12300238/Speed_docs"><i>le github</i></a></button>
-        <br>
-        <i>La page de configuration sheet:</i>
-        <div class="images_suivit">
-          <img src="public/projet_perso.png" alt="une page google sheet">
+    <!-- Mes ambitions -->
+    <section class="section">
+      <div class="section-inner">
+        <p class="section-label">02 — Objectifs</p>
+        <h2 class="section-title">Mes ambitions</h2>
+        <div class="ambitions-grid reveal">
+          <div class="ambition-item">
+            <div class="step">Étape 1 · En cours</div>
+            <h4>Finir le BUT Informatique</h4>
+            <p>Troisième année en alternance chez Nomios, avec une coloration IA qui m'expose aux systèmes intelligents et aux architectures avancées.</p>
+          </div>
+          <div class="ambition-item">
+            <div class="step">Étape 2 · Mastère — Déjà accepté</div>
+            <h4>École Oteria</h4>
+            <p>Intégrer le <a href="https://www.oteria.fr/" target="_blank">Mastère Oteria</a>, école d'excellence spécialisée en cybersécurité, pour approfondir les domaines réseaux et sécurité jusqu'au niveau bac +5.</p>
+          </div>
+          <div class="ambition-item">
+            <div class="step">Étape 3 · Long terme</div>
+            <h4>Évolution professionnelle</h4>
+            <p>Découvrir différentes entreprises, différentes philosophies et cultures de travail, et progresser sur les plans technique et hiérarchique.</p>
+          </div>
         </div>
+      </div>
+    </section>
 
-      </p>
+    <!-- Navigation vers les autres pages -->
+    <section class="section">
+      <div class="section-inner">
+        <p class="section-label">Explorer</p>
+        <h2 class="section-title">Continuer la visite</h2>
+        <div class="page-nav">
+          <a href="projets.html" class="page-nav-card reveal">
+            <span class="pnc-label">02 — SAÉ & Compétences</span>
+            <span class="pnc-title">Projets universitaires</span>
+            <span class="pnc-arrow">→</span>
+          </a>
+          <a href="experience.html" class="page-nav-card reveal">
+            <span class="pnc-label">03 — Parcours pro</span>
+            <span class="pnc-title">Expérience</span>
+            <span class="pnc-arrow">→</span>
+          </a>
+          <a href="perso.html" class="page-nav-card reveal">
+            <span class="pnc-label">04 — Side projects</span>
+            <span class="pnc-title">Projets personnels</span>
+            <span class="pnc-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
-    &copy; 2025 Mathew Prades - Portfolio personnel
+    <span>&copy; 2025 <a href="index.html">Mathew Prades</a> —
+      <a href="projets.html">Projets</a> ·
+      <a href="experience.html">Expérience</a> ·
+      <a href="perso.html">Personnel</a>
+    </span>
   </footer>
 
   <script src="script.js"></script>

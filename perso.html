@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projets personnels — Mathew Prades</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="header-identity">
+        <a href="index.html" class="name">Mathew Prades</a>
+        <span class="role">BUT Informatique · 3ème année · Coloration IA</span>
+      </div>
+      <div class="nav-page-indicator"><span>Projets personnels</span></div>
+      <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="experience.html">Expérience</a></li>
+          <li><a href="perso.html">Personnel</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="page-header-inner">
+      <div class="page-tag">04 — Personnel</div>
+      <h1>Projets<br><span>personnels</span></h1>
+      <p>Des projets menés hors du cadre universitaire — une nuit de compétition intensive, un outil pratique d'automatisation. La preuve que l'envie de coder ne s'arrête pas à la salle de cours.</p>
+    </div>
+  </div>
+
+  <main>
+
+    <section class="section">
+      <div class="section-inner">
+        <p class="section-label">Déc. 2024 · Compétition nationale</p>
+        <h2 class="section-title">La Nuit de l'Info</h2>
+
+        <div class="card accent-bar reveal" style="max-width: 760px;">
+          <div class="card-number">5 – 6 DÉC. 2024 · 16h39 → 8h04 · 15h25 non-stop</div>
+          <h3>Développement web en conditions extrêmes</h3>
+          <p>
+            La Nuit de l'Info est une compétition nationale qui réunit étudiants, enseignants et entreprises autour du développement d'une application web en une seule nuit. Sujet 2024 : créer un site pour la <a href="https://www.raceforwater.org" target="_blank">Race for Water Fondation</a> en comparant l'océan au corps humain pour présenter différents organismes marins et leurs rôles.
+          </p>
+          <p style="margin-top:12px;color:var(--muted);font-size:0.9rem;">
+            Cet exercice intensif m'a mis à l'épreuve sur trois plans : développement web sous contrainte de temps, communication en équipe en conditions de fatigue, et capacité à prioriser les fonctionnalités essentielles dans un délai non-négociable.
+          </p>
+          <div class="card-links">
+            <span class="chip">Développement web</span>
+            <span class="chip">HTML · CSS · JS</span>
+            <span class="chip">Travail sous contrainte</span>
+            <span class="chip">Travail en équipe</span>
+            <a href="https://github.com/NoWauu/NDI2024" class="chip" target="_blank">↗ GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <p class="section-label">Projet perso · Automatisation</p>
+        <h2 class="section-title">Générateur de contrats</h2>
+
+        <div class="card accent-bar2 reveal" style="max-width: 760px;">
+          <div class="card-number">PROJET PERSO · Google Workspace · AppScript</div>
+          <h3>Automatisation documentaire avec AppScript</h3>
+          <p>
+            Outil développé dans un cadre personnel pour automatiser la génération de contrats. Il repose sur la suite Google : <strong style="color:var(--text)">Google Sheets</strong> comme interface de configuration (blocs de contrat pré-rédigés, variables à remplacer), <strong style="color:var(--text)">Google Docs</strong> comme format de sortie, et <strong style="color:var(--text)">AppScript</strong> (dérivé de JavaScript) comme moteur de traitement.
+          </p>
+          <p style="margin-top:12px;color:var(--muted);font-size:0.9rem;">
+            L'outil lit les entrées depuis la feuille de calcul (noms des contractants, durée, clauses à inclure ou exclure), assemble les blocs de texte selon les paramètres et génère automatiquement un document Google Docs opérationnel et mis en forme.
+          </p>
+          <div class="card-images single" style="max-width:500px;">
+            <img src="public/projet_perso.png" alt="Google Sheet de configuration du générateur">
+          </div>
+          <div class="card-links">
+            <span class="chip">AppScript</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Google Sheets API</span>
+            <span class="chip">Google Docs API</span>
+            <span class="chip">Automatisation</span>
+            <a href="https://github.com/12300238/Speed_docs" class="chip" target="_blank">↗ GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nav -->
+    <section class="section">
+      <div class="section-inner">
+        <div class="page-nav">
+          <a href="index.html" class="page-nav-card reveal">
+            <span class="pnc-label">01 — À propos</span>
+            <span class="pnc-title">Accueil</span>
+            <span class="pnc-arrow">→</span>
+          </a>
+          <a href="projets.html" class="page-nav-card reveal">
+            <span class="pnc-label">02 — SAÉ & Compétences</span>
+            <span class="pnc-title">Projets universitaires</span>
+            <span class="pnc-arrow">→</span>
+          </a>
+          <a href="experience.html" class="page-nav-card reveal">
+            <span class="pnc-label">03 — Parcours pro</span>
+            <span class="pnc-title">Expérience</span>
+            <span class="pnc-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>&copy; 2025 <a href="index.html">Mathew Prades</a> —
+      <a href="projets.html">Projets</a> ·
+      <a href="experience.html">Expérience</a> ·
+      <a href="perso.html">Personnel</a>
+    </span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

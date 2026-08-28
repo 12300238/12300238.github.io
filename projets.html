@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projets universitaires — Mathew Prades</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <div class="header-identity">
+        <a href="index.html" class="name">Mathew Prades</a>
+        <span class="role">BUT Informatique · 3ème année · Coloration IA</span>
+      </div>
+      <div class="nav-page-indicator"><span>Projets universitaires</span></div>
+      <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+      <nav id="navbar">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="projets.html">Projets</a></li>
+          <li><a href="experience.html">Expérience</a></li>
+          <li><a href="perso.html">Personnel</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="page-header-inner">
+      <div class="page-tag">02 — Compétences & SAÉ</div>
+      <h1>Projets<br><span>universitaires</span></h1>
+      <p>Cinq SAÉ (Situations d'Apprentissage et d'Évaluation) qui couvrent le cycle complet du développement — de la virtualisation à l'application full-stack, en passant par la modélisation de données et le recueil de besoins.</p>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- SAÉ S1-S4 -->
+    <section class="section">
+      <div class="section-inner">
+        <p class="section-label">Semestres 1 à 4</p>
+        <h2 class="section-title">Bilan de compétences</h2>
+
+        <div class="cards-grid">
+
+          <!-- SAE 1 -->
+          <div class="card reveal">
+            <div class="card-number">SAÉ · 01 · Infrastructure</div>
+            <h3>Services réseau & machine virtuelle</h3>
+            <p>
+              Émulation d'un environnement serveur complet sur VirtualBox : installation de MariaDB pour la base de données, du service Apache2 pour transformer la VM en serveur web, et scripts PHP pour faire communiquer les deux. Premier contact concret avec l'administration système.
+            </p>
+            <p style="margin-top:10px;color:var(--muted);font-size:0.85rem;">
+              Ce projet m'a appris à créer une VM, la booter, configurer un environnement de développement multi-services et écrire des scripts de lecture et de traitement de données.
+            </p>
+            <div class="card-links">
+              <span class="chip">VirtualBox</span>
+              <span class="chip">MariaDB</span>
+              <span class="chip">Apache2</span>
+              <span class="chip">PHP</span>
+              <span class="chip">Administration système</span>
+            </div>
+          </div>
+
+          <!-- SAE 2 -->
+          <div class="card reveal">
+            <div class="card-number">SAÉ · 02 · Développement web & équipe</div>
+            <h3>Site d'exposition — Travail d'équipe</h3>
+            <p>
+              Visite d'un musée, interview de visiteurs, puis développement d'un site web responsive en équipe pour présenter l'exposition et imaginer son évolution. Répartition des tâches, gestion du code en commun et rendu final fonctionnel.
+            </p>
+            <p style="margin-top:10px;color:var(--muted);font-size:0.85rem;">
+              Compétences renforcées : HTML/CSS/JS vanilla, responsive design, communication en équipe et organisation du travail collectif.
+            </p>
+            <div class="card-links">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <a href="https://12300238.github.io/SAE-206/" class="chip" target="_blank">↗ Site live</a>
+              <a href="https://github.com/12300238/SAE-206" class="chip" target="_blank">GitHub</a>
+            </div>
+          </div>
+
+          <!-- SAE 3 -->
+          <div class="card reveal">
+            <div class="card-number">SAÉ · 03 · Base de données</div>
+            <h3>Modélisation & génération de BDD</h3>
+            <p>
+              Conception d'un modèle entité-association, écriture d'un script SQL de génération automatique des tables PostgreSQL, puis comparaison avec un outil professionnel de génération de schémas. Exercice de rigueur sur la normalisation et la cohérence des relations.
+            </p>
+            <div class="card-images">
+              <img src="public/SAE3_1.png" alt="Modèle EA 1">
+              <img src="public/SAE3_2.png" alt="Modèle EA 2">
+            </div>
+            <div class="card-links">
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">SQL</span>
+              <span class="chip">Modélisation EA</span>
+              <span class="chip">Scripts DDL</span>
+            </div>
+          </div>
+
+          <!-- SAE 4 -->
+          <div class="card reveal">
+            <div class="card-number">SAÉ · 04 · Recueil de besoins</div>
+            <h3>Double rôle client / développeur</h3>
+            <p>
+              Exercice en deux temps : d'abord dans la peau d'un patron de bar (client) pour formuler un cahier des charges, définir des attentes fonctionnelles et graphiques, puis dans celle d'un développeur pour un observatoire ciblant un public jeune. Aller-retour entre expression du besoin et réponse technique.
+            </p>
+            <div class="card-images">
+              <img src="public/SAE4_1.png" alt="Maquette V1">
+              <img src="public/SAE4_2.png" alt="Maquette V2">
+            </div>
+            <div class="card-links">
+              <span class="chip">UX/UI</span>
+              <span class="chip">Maquettage</span>
+              <span class="chip">Communication client</span>
+              <span class="chip">Cahier des charges</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SAÉ 5 — fil rouge -->
+    <section class="section">
+      <div class="section-inner">
+        <p class="section-label">Projet fil rouge · S3-S4</p>
+        <h2 class="section-title">Application web & mobile complète</h2>
+
+        <div class="card accent-bar reveal" style="grid-column: 1 / -1;">
+          <div class="card-number">SAÉ · 05 — Full-stack · Django · NextJS · Flutter · Docker</div>
+          <h3>V-lib — De l'API REST à l'application mobile</h3>
+          <p>
+            Projet fil rouge de deux semestres visant à mettre en pratique l'ensemble des compétences acquises. L'équipe a conçu une application complète de A à Z : une base de données <strong style="color:var(--text)">MySQL</strong> interrogée par une <strong style="color:var(--text)">API Python/Django</strong>, un frontend <strong style="color:var(--text)">NextJS</strong> consommant cette API, puis un portage mobile avec <strong style="color:var(--text)">Flutter</strong>. Le back-end a été <strong style="color:var(--text)">conteneurisé avec Docker</strong> pour garantir la reproductibilité des environnements.
+          </p>
+          <p style="margin-top:12px;color:var(--muted);font-size:0.9rem;">
+            Coordination en équipe via des réunions hebdomadaires de suivi, présentation de l'avancement et réception de retours. Ce projet a validé ma capacité à travailler sur l'ensemble du stack technique d'une application moderne.
+          </p>
+          <div style="display:flex; gap:20px; margin-top:20px; flex-wrap:wrap;">
+            <div style="flex:1; min-width:200px; text-align:center; font-size:0.75rem; color:var(--muted);">
+              <img src="public/SAE5_1.png" alt="Site web NextJS" style="width:100%; border-radius:8px; border:1px solid var(--border); margin-bottom:6px;">
+              Application web — NextJS
+            </div>
+            <div style="flex:1; min-width:200px; text-align:center; font-size:0.75rem; color:var(--muted);">
+              <img src="public/SAE5_2.png" alt="App mobile Flutter" style="width:100%; border-radius:8px; border:1px solid var(--border); margin-bottom:6px;">
+              Application mobile — Flutter
+            </div>
+          </div>
+          <div class="card-links">
+            <span class="chip">Django REST Framework</span>
+            <span class="chip">NextJS</span>
+            <span class="chip">Flutter</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Git</span>
+            <a href="https://github.com/NoWauu/V-lib" class="chip" target="_blank">↗ GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAÉ S5 IA -->
+    <section class="section">
+      <div class="section-inner">
+        <p class="section-label">Semestre 5 · Coloration IA</p>
+        <h2 class="section-title">Application mobile de reconnaissance faciale</h2>
+
+        <div class="card accent-bar2 reveal">
+          <div class="card-number">SAÉ S5.01 — Deep Learning · Computer Vision · Android</div>
+          <h3>Prédiction d'âge, de genre et d'ethnicité par IA</h3>
+          <p>
+            Projet fil rouge du semestre 5 mené en équipe de trois (Ryan Maria Paul, Ivan Veljovic Bulatovic, Mathew Prades). L'objectif : concevoir, entraîner et intégrer dans une application Android des modèles de <strong style="color:var(--text)">deep learning</strong> capables de prédire l'<strong style="color:var(--text)">âge</strong>, le <strong style="color:var(--text)">genre</strong> et l'<strong style="color:var(--text)">ethnicité</strong> d'une personne à partir d'une photo de son visage.
+          </p>
+          <p style="margin-top:12px;color:var(--muted);font-size:0.9rem;">
+            Le projet s'est déroulé en deux grandes phases : la construction de modèles <strong style="color:var(--text)">« from scratch »</strong> avec des CNN en TensorFlow/Keras, puis l'utilisation du <strong style="color:var(--text)">transfer learning</strong> à partir de modèles pré-entraînés (EfficientNetB0, MobileNetV2, ResNet50). Un <strong style="color:var(--text)">modèle triple à sorties multiples</strong> (âge + genre + ethnicité depuis une seule entrée) a finalement été intégré à l'application. Résultats du meilleur modèle from scratch : genre ~91,2% d'accuracy, ethnicité ~81%, MAE âge ~5,2 ans.
+          </p>
+          <p style="margin-top:12px;color:var(--muted);font-size:0.9rem;">
+            L'application Android (Kotlin) embarque les modèles via <strong style="color:var(--text)">TensorFlow Lite</strong>, intègre <strong style="color:var(--text)">YOLO</strong> pour la détection de visage avant l'inférence, <strong style="color:var(--text)">Firebase</strong> pour l'authentification et la persistance des données, et propose un mode de prédiction <strong style="color:var(--text)">temps réel</strong> via le flux caméra. Le projet a été géré de façon agile via <strong style="color:var(--text)">Jira</strong> et <strong style="color:var(--text)">GitHub</strong> (branches feature → develop → main, Pull Requests).
+          </p>
+          <div class="card-links">
+            <span class="chip">Python</span>
+            <span class="chip">TensorFlow / Keras</span>
+            <span class="chip">Transfer Learning</span>
+            <span class="chip">CNN</span>
+            <span class="chip">EfficientNetB0</span>
+            <span class="chip">MobileNetV2</span>
+            <span class="chip">Kotlin / Android</span>
+            <span class="chip">TensorFlow Lite</span>
+            <span class="chip">YOLO</span>
+            <span class="chip">Firebase</span>
+            <span class="chip">Jira</span>
+            <a href="https://github.com/FLUMINOX7/SAE_AI" class="chip" target="_blank">↗ GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAÉ S6 -->
+    <section class="section">
+      <div class="section-inner">
+        <p class="section-label">Semestre 6 · Coloration IA</p>
+        <h2 class="section-title">Chatbot RAG de recettes de cuisine</h2>
+
+        <div class="card accent-bar reveal">
+          <div class="card-number">SAÉ S6.01 — RAG · LLM · Angular · Flask · Docker · Render</div>
+          <h3>Application web de chatbot conversationnel spécialisé</h3>
+          <p>
+            Projet fil rouge du semestre 6, mené en équipe de quatre (Ryan Maria Paul, Ivan Veljovic Bulatovic, Mathew Prades, Inès Marcisz). L'objectif : développer et déployer une application web complète de chatbot intelligent spécialisé dans les recettes de cuisine, reposant sur une architecture <strong style="color:var(--text)">RAG (Retrieval-Augmented Generation)</strong> combinant recherche sémantique et génération par LLM.
+          </p>
+          <p style="margin-top:12px;color:var(--muted);font-size:0.9rem;">
+            L'architecture est découpée en trois couches : un frontend <strong style="color:var(--text)">Angular</strong> (TypeScript, SPA, modules auth / chat / historique), une API REST <strong style="color:var(--text)">Flask</strong> (Python) gérant l'authentification JWT + bcrypt, la gestion des conversations et le pipeline RAG, et une double base <strong style="color:var(--text)">PostgreSQL</strong> — applicative pour les utilisateurs et conversations, documentaire pour les chunks et métadonnées PDF. L'index vectoriel <strong style="color:var(--text)">FAISS</strong> est chargé en mémoire au démarrage du serveur.
+          </p>
+          <p style="margin-top:12px;color:var(--muted);font-size:0.9rem;">
+            Le pipeline RAG ingère des fichiers PDF découpés en chunks de 512 tokens (chevauchement de 50), génère leurs embeddings et les indexe dans FAISS. À chaque requête, le système récupère les passages les plus proches sémantiquement et construit un prompt enrichi (contexte documentaire + historique) envoyé au LLM via <strong style="color:var(--text)">OpenRouter</strong>, avec stratégie de fallback entre DeepSeek V4 Flash, Llama 3.3 70B et un modèle gratuit. La réponse est streamée token par token via <strong style="color:var(--text)">SSE</strong>. L'application est conteneurisée avec <strong style="color:var(--text)">Docker</strong> (build multi-stage) et déployée sur <strong style="color:var(--text)">Render</strong>, gérée en agile via Jira et GitHub (branches feature → develop → main, Pull Requests).
+          </p>
+          <div class="card-links">
+            <span class="chip">Angular · TypeScript</span>
+            <span class="chip">Flask · Python</span>
+            <span class="chip">RAG</span>
+            <span class="chip">FAISS</span>
+            <span class="chip">LLM · OpenRouter</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">JWT · bcrypt</span>
+            <span class="chip">SSE streaming</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Render</span>
+            <span class="chip">Jira</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bilan -->
+    <section class="section">
+      <div class="section-inner">
+        <p class="section-label">Synthèse</p>
+        <h2 class="section-title">Ce que ces projets m'ont appris</h2>
+        <div class="about-text reveal" style="max-width:700px;">
+          <p>Ces projets m'ont permis de comprendre le fonctionnement réel d'un projet informatique, de développer, d'optimiser et de déployer des applications web et mobiles. Pour chacun d'eux, j'ai dû mettre en place des environnements de développement, gérer les systèmes de données correspondants et m'organiser avec une équipe pour définir les rôles et coordonner les tâches. Toutes ces expériences m'ont préparé aux missions de mon stage chez Veolia puis de mon alternance chez Nomios.</p>
+        </div>
+
+        <div class="page-nav">
+          <a href="experience.html" class="page-nav-card reveal">
+            <span class="pnc-label">03 — Parcours pro</span>
+            <span class="pnc-title">Expérience professionnelle</span>
+            <span class="pnc-arrow">→</span>
+          </a>
+          <a href="perso.html" class="page-nav-card reveal">
+            <span class="pnc-label">04 — Side projects</span>
+            <span class="pnc-title">Projets personnels</span>
+            <span class="pnc-arrow">→</span>
+          </a>
+          <a href="index.html" class="page-nav-card reveal">
+            <span class="pnc-label">01 — À propos</span>
+            <span class="pnc-title">Accueil</span>
+            <span class="pnc-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>&copy; 2025 <a href="index.html">Mathew Prades</a> —
+      <a href="projets.html">Projets</a> ·
+      <a href="experience.html">Expérience</a> ·
+      <a href="perso.html">Personnel</a>
+    </span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
